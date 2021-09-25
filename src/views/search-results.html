@@ -15,47 +15,24 @@
     <div id="page-search-results">
         
             <header>
-                <img src="./assets/logo.svg" alt="Logo marca do Ecoleta">
+                <img src="../../public/assets/logo.svg" alt="Logo marca do Ecoleta">
          
-                <a href="/">
+                <a href="../../src/views/index.html">
                     <span></span>
                     Voltar para a home
                 </a> 
             </header>
 
             <main>
-                {% if total > 0 %}
-                    <h4>
-                        <strong> {{total}} pontos</strong> encontrados
-                    </h4>
-
-                    <div class="cards">
-
-                        {% for place in places %}
-
-                            <div class="card">
+                <div class="cards">
+                   <div class="card">
+                       
+                        <img src="../../public/assets/EmojiTriste.png">
                                 
-                                <img src="{{ place.image}}" alt="{{place.name}}">
-                                <h1>{{place.name}}</h1>
-                                <h3>{{place.items}}</h3>
-                                <p>
-                                    {{place.city}}, {{place.state}} <br/>
-                                    {{place.address}} <br/>
-                                    {{place.address2}}
-                                </p>
-                            </div>
-
-                        {% endfor %}
-                    
-
                     </div>
-                {% else %}
-
-                <h4><strong>Nenhum item foi encontrado.</strong>Pois não existe pontos de coletas na cidade pesquisada.</h4>
-                
-                {% endif %}
+                </div> 
+                <h4>Nenhum item foi encontrado, pois não existe pontos de coletas na cidade pesquisada.</h4>
               
-
             </main>     
 
     </div>

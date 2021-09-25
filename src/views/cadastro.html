@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../../public/styles/main.css">
+    <link rel="stylesheet" href="../../public/styles/create-point.css">
+    <link rel="stylesheet" href="../../public/styles/responsive.css">
+</head>
+<body>
+    <div id="page-create-point">
+        
+        <img src="../../public/assets/logo.svg" alt="Logo marca do Ecoleta">
+            <header>
+         
+                <a href="../../src/views/index.html">
+                    <span></span>
+                    Voltar para a home
+                </a> 
+    
+            </header>
+
+            <form action="">
+                <h1>Cadastre-se</h1>
+
+                <fieldset>
+                    <legend>
+                        <h2>Dados Pessoais</h2>
+                    </legend>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="name">Usuário </label>
+                            <input type="url" name="image" 
+                            placeholder = " "
+                            required >
+                        </div>
+                    </div>
+                   
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="address">Endereço</label>
+                            <input type="text" name="address" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="address2">CPF/CNPJ</label>
+                            <input type="text" name="address2" required>
+                        </div> 
+                    </div>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="state">Estado</label>
+                            <select name="uf" required>
+                                <option value="">Selecione seu estado</option>
+                            </select>
+
+                                <input type="hidden" name="state">
+                        </div>
+
+                        <div class="field">
+                            <label for="city">Cidade</label>
+                            <select name="city" disabled required >
+                                <option value="">Selecione sua cidade </option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="address">Gênero</label>
+                            <input type="text" name="address" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="pass">Senha </label>
+                            <input type="password" id= "pass" name="password"
+                             minlength="8" required>
+                        </div> 
+                    </div>
+                                       
+                    <form>
+                        <div>
+                          <label for="Nascimento">Data de Nascimento:  </label> <br> <br/>
+                          <input type="date" id="Nascimento" name="Nascimento" min="1888-01-01" max="3017-01-01" required>
+                          <span class="validity"></span>
+                        </div>
+                        
+                      </form>
+
+                </fildset>
+
+                <button type="submit"> Cadastre-se </button>
+
+            </form>
+
+    </div>
+    
+    <script src="../../public/scripts/create-point.js"></script>
+    
+</body>
+</html>

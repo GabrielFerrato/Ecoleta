@@ -1,7 +1,7 @@
 const express = require("express")
 const server = express()
 
-const db = require("./database/db.js")
+const db = require("../../src/views/index.html")
 
 server.use(express.static("public"))
 
